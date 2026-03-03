@@ -1,0 +1,21 @@
+{
+  "nav": ["Artists", "Exhibitions", "News", "Fairs", "Info"],
+  "home": {
+    "title": "ONS Gallery",
+    "subtitle": "Berlin"
+  },
+  "artists": [],
+  "exhibitions": {
+    "current": null,
+    "byYear": {}
+  },
+  "news": [],
+  "fairs": [],
+  "info": {
+    "lines": [
+      "ONS Gallery",
+      "Berlin",
+      "By appointment"
+    ]
+  }
+}
