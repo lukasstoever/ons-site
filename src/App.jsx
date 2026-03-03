@@ -18,6 +18,8 @@ export default function App() {
 
   return (
     <div className="container">
+<h1 className="h1">{home?.title}</h1>
+<p className="p">{home?.subtitle}</p>
       <nav className="nav">
         {nav.map((label) => (
           <a key={label} href={`#${slug(label)}`}>
@@ -26,8 +28,7 @@ export default function App() {
         ))}
       </nav>
 
-      <h1 className="h1">{home?.title}</h1>
-      <p className="p">{home?.subtitle}</p>
+      
 
       <section id="artists" className="section">
         <div className="small">Artists</div>
