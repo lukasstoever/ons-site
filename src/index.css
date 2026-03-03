@@ -90,3 +90,65 @@ a:hover{
     --gapSection: 46px;
   }
 }
+.grid{
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  column-gap: 34px;
+  row-gap: 0;
+  align-items: start;
+}
+
+.label{
+  font-size: var(--small);
+  color: var(--muted);
+  padding-top: 2px;
+}
+
+.block{
+  min-width: 0;
+}
+
+@media (max-width: 740px){
+  .grid{
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+}
+/* --- Croynielsen-style left label alignment without JSX changes --- */
+
+.section{
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  column-gap: 34px;
+  align-items: start;
+}
+
+.section > .small{
+  margin-top: 0;
+}
+
+.section > .list{
+  margin-top: 0;
+}
+
+@media (max-width: 740px){
+  .section{
+    grid-template-columns: 1fr;
+    row-gap: 8px;
+  }
+}
+/* --- Step 6: list rhythm + link feel --- */
+
+.list{
+  gap: 4px;
+  font-size: 15px;
+}
+
+.nav{
+  font-size: 13px;
+}
+
+a:hover{
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
